@@ -9,19 +9,19 @@ public class Book {
         this.yearOfIssue = yearOfIssue;
     }
 
-    public Author getAuthor() {
+    public Author getauthor() {
         return this.author;
     }
 
-    public String getName() {
+    public String getname() {
         return this.name;
     }
 
-    public int getYearOfIssue() {
+    public int getyearOfIssue() {
         return this.yearOfIssue;
     }
 
-    public void setYearOfIssue(int Year) {
+    public void setyearOfIssue(int Year) {
         this.yearOfIssue = Year;
     }
 
