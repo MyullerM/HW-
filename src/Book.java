@@ -1,24 +1,31 @@
 public class Book {
-    private String Name;
+    private String name;
     private Author author;
     private int yearOfIssue;
 
-    public Book(String Name, Author author, int yearOfIssue) {
-        this.Name = Name;
+    public Book(Author author, String name, int yearOfIssue) {
         this.author = author;
+        this.name = name;
         this.yearOfIssue = yearOfIssue;
     }
 
-    public String getBookName() {
-        return this.Name;
-    }
-
-    public Author getAuthor() {
+    public Author getauthor() {
         return this.author;
     }
 
-    public int getYearOfIssue() {
+    public String getname() {
+        return this.name;
+    }
+
+    public int getyearOfIssue() {
         return this.yearOfIssue;
     }
-}
+
+    public void setyearOfIssue(int Year) {
+        this.yearOfIssue = Year;
+    }
+
+    public String toString() {
+        return this.name + ", " + this.author + ", " + this.yearOfIssue;
+    }
 }
